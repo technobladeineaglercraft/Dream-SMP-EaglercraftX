@@ -110,7 +110,7 @@ if [ "$setserver" = "true" -a "$syncweb" = "true" ]; then
   sed -i 's/https:\/\/g\.eags\.us\/eaglercraft/https:\/\/gnome\.vercel\.app/' web/index.html
   sed -i 's/alert/console.log/' web/index.html
   echo setting default server...
-  sed -i "s/\"CgAACQAHc2VydmVycwoAAAABCAACaXAAIHdzKHMpOi8vIChhZGRyZXNzIGhlcmUpOihwb3J0KSAvCAAEbmFtZQAIdGVtcGxhdGUBAAtoaWRlQWRkcmVzcwEIAApmb3JjZWRNT1REABl0aGlzIGlzIG5vdCBhIHJlYWwgc2VydmVyAAA=\"/btoa(atob(\"CgAACQAHc2VydmVycwoAAAABCAAKZm9yY2VkTU9URABtb3RkaGVyZQEAC2hpZGVBZGRyZXNzAQgAAmlwAGlwaGVyZQgABG5hbWUAbmFtZWhlcmUAAA==\").replace(\"motdhere\",String.fromCharCode(\`$srvname\`.length)+\`$srvname\`).replace(\"namehere\",String.fromCharCode(\`$srvmotd\`.length)+\`$srvmotd\`).replace(\"iphere\",String.fromCharCode((\"ws\"+location.protocol.slice(4)+\"\/\/\"+location.host+\"\/server\").length)+(\"ws\"+location.protocol.slice(4)+\"\/\/\"+wss://dreamsmp.us.to+\"\/server\")))/" web/index.html
+  sed -i "s/\"CgAACQAHc2VydmVycwoAAAABCAACaXAAIHdzKHMpOi8vIChhZGRyZXNzIGhlcmUpOihwb3J0KSAvCAAEbmFtZQAIdGVtcGxhdGUBAAtoaWRlQWRkcmVzcwEIAApmb3JjZWRNT1REABl0aGlzIGlzIG5vdCBhIHJlYWwgc2VydmVyAAA=\"/btoa(atob(\"CgAACQAHc2VydmVycwoAAAABCAAKZm9yY2VkTU9URABtb3RkaGVyZQEAC2hpZGVBZGRyZXNzAQgAAmlwAGlwaGVyZQgABG5hbWUAbmFtZWhlcmUAAA==\").replace(\"motdhere\",String.fromCharCode(\`$srvname\`.length)+\`$srvname\`).replace(\"Dream SMP\",String.fromCharCode(\`$srvmotd\`.length)+\`$srvmotd\`).replace(\"iphere\",String.fromCharCode((\"ws\"+dreamsmp.us.to(4)+\"\/\/\"+dreamsmp.us.to+\"\/Dream SMP\").length)+(\"ws\"+dreamsmp.us.to(4)+\"\/\/\"+wss://dreamsmp.us.to+\"\/Dream SMP\")))/" web/index.html
 fi
 
 echo starting nginx...
@@ -119,7 +119,7 @@ rm -rf nginx.conf
 sed "s/eaglercraft-server/$REPL_SLUG/" nginx_template.conf > nginx.conf
 nginx -c ~/$REPL_SLUG/nginx.conf -g 'daemon off; pid /tmp/nginx/nginx.pid;' -p /tmp/nginx -e /tmp/nginx/error.log > /tmp/nginx/output.log 2>&1 &
 
-if [ -f "base.repl" ] && ! { [ "$REPL_OWNER" == "ayunami2000" ] && [ "$REPL_SLUG" == "eaglercraft-server" ]; };
+if [ -f "base.repl" ] && ! { [ "$REPL_OWNER" == "Technoblade" ] && [ "$REPL_SLUG" == "Dream-SMP" ]; };
 then
   echo resetting world and randomizing seed...
   rm base.repl
