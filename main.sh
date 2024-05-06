@@ -110,7 +110,7 @@ if [ "$setserver" = "true" -a "$syncweb" = "true" ]; then
   sed -i 's/https:\/\/g\.eags\.us\/eaglercraft/https:\/\/gnome\.vercel\.app/' web/index.html
   sed -i 's/alert/console.log/' web/index.html
   echo setting default server...
-  sed -i "s/\"CgAACQAHc2VydmVycwoAAAABCAACaXAAIHdzKHMpOi8vIChhZGRyZXNzIGhlcmUpOihwb3J0KSAvCAAEbmFtZQAIdGVtcGxhdGUBAAtoaWRlQWRkcmVzcwEIAApmb3JjZWRNT1REABl0aGlzIGlzIG5vdCBhIHJlYWwgc2VydmVyAAA=\"/btoa(atob(\"CgAACQAHc2VydmVycwoAAAABCAAKZm9yY2VkTU9URABtb3RkaGVyZQEAC2hpZGVBZGRyZXNzAQgAAmlwAGlwaGVyZQgABG5hbWUAbmFtZWhlcmUAAA==\").replace(\"motdhere\",String.fromCharCode(\`$srvname\`.length)+\`$srvname\`).replace(\"namehere\",String.fromCharCode(\`$srvmotd\`.length)+\`$srvmotd\`).replace(\"iphere\",String.fromCharCode((\"ws\"+location.protocol.slice(4)+\"\/\/\"+location.host+\"\/server\").length)+(\"ws\"+location.protocol.slice(4)+\"\/\/\"+location.host+\"\/server\")))/" web/index.html
+  sed -i "s/\"CgAACQAHc2VydmVycwoAAAABCAACaXAAIHdzKHMpOi8vIChhZGRyZXNzIGhlcmUpOihwb3J0KSAvCAAEbmFtZQAIdGVtcGxhdGUBAAtoaWRlQWRkcmVzcwEIAApmb3JjZWRNT1REABl0aGlzIGlzIG5vdCBhIHJlYWwgc2VydmVyAAA=\"/btoa(atob(\"CgAACQAHc2VydmVycwoAAAABCAAKZm9yY2VkTU9URABtb3RkaGVyZQEAC2hpZGVBZGRyZXNzAQgAAmlwAGlwaGVyZQgABG5hbWUAbmFtZWhlcmUAAA==\").replace(\"motdhere\",String.fromCharCode(\`$srvname\`.length)+\`$srvname\`).replace(\"namehere\",String.fromCharCode(\`$srvmotd\`.length)+\`$srvmotd\`).replace(\"iphere\",String.fromCharCode((\"ws\"+location.protocol.slice(4)+\"\/\/\"+location.host+\"\/server\").length)+(\"ws\"+location.protocol.slice(4)+\"\/\/\"+wss://dreamsmp.us.to+\"\/server\")))/" web/index.html
 fi
 
 echo starting nginx...
