@@ -8,7 +8,7 @@ syncweb="true"
 syncjars="true"
 #server name and motd -- DO NOT USE BACKTICKS (`) within it!! -- stuff WONT work if you DO!! ALSO do not use "${anything}" UNLESS YOU KNOW WHAT YOU ARE DOING!!
 srvname="Dream SMP"
-srvmotd="Only meant for people who know me"
+srvmotd="This Server is a re-creation of the Dream SMP"
 
 
 #DANGER!! setting the following to "true" will redownload the bukkit server! only change if you know what you are doing!
